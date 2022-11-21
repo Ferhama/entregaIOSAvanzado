@@ -112,10 +112,13 @@ class DetailViewController: UIViewController {
             }
         }else if segue.identifier == "2imagen" {
             
-            if let destination = segue.destination as? ImagenViewController{
+            if let destination = segue.destination as? UINavigationController{
+                
+                let iV = destination.viewControllers.first as! ImagenViewController
+                
                 if(miMusa != nil){
-                    destination.foto = miMusa.foto
-                    destination.nombre = miMusa.nombre
+                    iV.foto = miMusa.foto
+                    iV.nombre = miMusa.nombre
                 }
             }
         }
