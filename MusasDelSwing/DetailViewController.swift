@@ -51,7 +51,7 @@ class DetailViewController: UIViewController {
         //fin barra superior
 
         
-        // Do any additional setup after loading the view.
+        self.title = "Musas del Swing"
     }
     
     //función para enviar el objeto desde el TableView

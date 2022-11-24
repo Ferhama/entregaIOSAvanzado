@@ -12,12 +12,12 @@ class ImagenViewController: UIViewController {
     
     @IBOutlet weak var imagen: UIImageView!
     
+
     var foto : String?
     var nombre : String?
     var initialLocation: CGPoint = CGPoint(x: 0, y: 0)
     var colorFirma : UIColor = .black
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -27,6 +27,7 @@ class ImagenViewController: UIViewController {
         }
         
     }
+    
     
     @IBAction func seleccionColor(_ sender: Any) {
         
@@ -81,6 +82,7 @@ class ImagenViewController: UIViewController {
     
     func addDeditatoria(name : String, Dedic : String, loc : CGPoint){
       
+        
         let titleLabel = UILabel(frame: CGRect(x: loc.x, y: (loc.y - 225), width: imagen.frame.width, height: 150))
            
             titleLabel.numberOfLines = 0
